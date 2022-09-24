@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;500;600&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Source+Sans+Pro:wght@200;300;400;700&display=swap");
+
+:root {
+  /* CSS HEX */
+  --davys-grey: #50514fff;
+  --maximum-blue-purple: #b4adeaff;
+  --baby-powder: #fdfff7ff;
+  --medium-spring-green: #59ffa0ff;
+  --corn: #ffed65ff;
+
+  /* CSS HSL */
+  --davys-grey: hsla(90, 1%, 31%, 1);
+  --maximum-blue-purple: hsla(247, 59%, 80%, 1);
+  --baby-powder: hsla(75, 100%, 98%, 1);
+  --medium-spring-green: hsla(146, 100%, 67%, 1);
+  --corn: hsla(53, 100%, 70%, 1);
+}
+
+.container {
+  color: var(--davys-grey);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gentium Plus", serif;
+}
+
+header {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--maximum-green-purple);
+  background-color: var(--baby-powder);
+  padding: 20px;
+}
+
+html {
+  background-color: #ffed65ff;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  color: var(--davys-grey);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.gridRow {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  background-color: var(--baby-powder);
+  height: 100vh;
+}
+
+.main-nav {
+  list-style: none;
+  border-bottom: var(--davys-grey);
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 80px;
+  font-size: 30px;
+  font-weight: 20;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: var(--davys-grey);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid var(--davys-grey);
+}
+
+img {
+  height: 100vh;
+}
+
+.briefing h1 {
+  font-size: 60px;
+  padding: 10%;
+  text-align: center;
+}
+
+.extraDetails {
+  background-color: var(--corn);
+  padding: 20px;
+}
+
+.gapping {
+  padding: 40px;
+  text-align: center;
+}
