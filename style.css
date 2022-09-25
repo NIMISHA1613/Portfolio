@@ -80,7 +80,7 @@ html {
 
 .gridRow {
   display: grid;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 1fr 0.75fr;
   background-color: var(--baby-powder);
   height: 100vh;
 }
