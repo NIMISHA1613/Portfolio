@@ -6,38 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
   <body style="margin: auto">
-    <h1>Bouncy Ball</h1>
-    <iframe
-      src="https://nimisha56.github.io/FlappyBirdProject/"
-      height="700"
-      width="1400"
-      title="Iframe Example"
-    ></iframe>
+    <header>
+      <nav class="grid">
+        <div class="row">Nimisha Gosain</div>
+        <div>
+          <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="box-cards">
+      <div class="box-card">
+        <h1>Bouncy Ball</h1>
+        <img src="images/BouncyBall.png" alt="bouncy ball" />
+        <p>
+          Using P5.JS, HTML and CSS I created this project in which the player
+          controls the ball’s height using Spacebar which moves persistently to
+          right. The player is tasked with navigating the bouncy ball through
+          the pair of obstacles i.e., pipes of random heights. The scoreboard is
+          also added to the game
+        </p>
+        <button onclick='openDialog("playGame", "bouncy ball")'>Play</button>
+      </div>
+      <div class="box-card">
+        <h1>Snake Game</h1>
+        <img src="images/Snake.png" alt="snake" />
+        <button onclick='openDialog("playGame", "snake")'>Play</button>
+      </div>
+      <div class="box-card">
+        <h1>Omnifood Website</h1>
+        <button onclick='openDialog("playGame", "omnifood")'>View</button>
+      </div>
+      <div class="box-card">
+        <h1>My Website Building Assignment</h1>
+        <button onclick='openDialog("playGame", "myWebsite")'>View</button>
+      </div>
+    </section>
 
-    <h1>Snake Game</h1>
-    <iframe
-      src="https://nimisha56.github.io/SnakeGame/"
-      height="700"
-      width="1400"
-      title="Iframe Example"
-    ></iframe>
-
-    <h1>Omnifood Website</h1>
-    <iframe
-      src="https://nimisha56.github.io/Omnifood/"
-      height="700"
-      width="1400"
-      title="Iframe Example"
-    ></iframe>
-
-    <h1>My Website Building Assignment</h1>
-    <iframe
-      src="https://nimisha56.github.io/MyWebsiteProject/"
-      height="700"
-      width="1400"
-      title="Iframe Example"
-    ></iframe>
+    <div class="div_modal" id="div_modal">
+      <div class="overlay" onclick="closeDialog()"></div>
+      <dialog id="iframeDialog">
+        <iframe
+          id="iframe"
+          title="Iframe Example"
+          src=""
+          width="100%"
+          height="100%"
+          class="second-row"
+          allowfullscreen
+        ></iframe>
+      </dialog>
+    </div>
   </body>
 </html>
