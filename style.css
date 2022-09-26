@@ -80,7 +80,7 @@ html {
 
 .gridRow {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
   background-color: var(--baby-powder);
   height: 100vh;
 }
@@ -88,6 +88,7 @@ html {
 .main-nav {
   list-style: none;
   border-bottom: var(--davys-grey);
+  padding: 0px;
 }
 
 .main-nav li {
@@ -113,7 +114,7 @@ html {
   border-bottom: 2px solid var(--davys-grey);
 }
 
-img {
+.grid img {
   height: 100vh;
 }
 
@@ -126,6 +127,7 @@ img {
 .extraDetails {
   background-color: var(--corn);
   padding: 20px;
+  text-align: center;
 }
 
 .gapping {
@@ -171,6 +173,8 @@ h1 {
   border: 2px solid var(--davys-grey);
   border-radius: 5px;
   padding: 5px;
+  width: 60px;
+  font-size: 20px;
 }
 
 .box-card button:hover {
@@ -179,5 +183,10 @@ h1 {
   font-weight: bold;
   border-radius: 5px;
   padding: 5px;
-  color: var(--baby-powder);
 }
+
+ul {
+  padding: 20px;
+  text-align: left;
+}
+

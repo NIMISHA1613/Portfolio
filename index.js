@@ -3,21 +3,34 @@ window.onload = function () {
 };
 
 startFunction = () => {};
-
 function openDialog(dialogType, gameName) {
+  let link = "";
+
   switch (gameName) {
     case "snake":
-      createIframe("https://nimisha56.github.io/SnakeGame/");
+      link = "https://nimisha56.github.io/SnakeGame/";
       break;
     case "bouncy ball":
-      createIframe("https://nimisha56.github.io/FlappyBirdProject/");
+      link = "https://nimisha56.github.io/BouncyBallProject/";
       break;
     case "omnifood":
-      createIframe("https://nimisha56.github.io/Omnifood/");
+      link = "https://nimisha56.github.io/Omnifood/";
       break;
     case "myWebsite":
-      createIframe("https://nimisha56.github.io/MyWebsiteProject/");
+      link = "https://nimisha56.github.io/MyWebsiteProject/";
       break;
+    case "24/7DeliveryServices":
+      link = " https://github.com/NIMISHA56/WebDevProject/";
+      break;
+    case "cityPopulationTracker":
+      link = "https://github.com/NIMISHA56/CityPopulation/";
+      break;
+  }
+
+  if (dialogType === "viewProject") {
+    window.open(link);
+  } else {
+    createIframe(link);
   }
 }
 
