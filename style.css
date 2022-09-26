@@ -80,9 +80,8 @@ html {
 
 .gridRow {
   display: grid;
-  grid-template-rows: 5fr 1fr;
+  grid-template-rows: 2fr 1fr;
   background-color: var(--baby-powder);
-  height: 100vh;
 }
 
 .main-nav {
@@ -116,6 +115,8 @@ html {
 
 .grid img {
   height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
 .briefing h1 {
