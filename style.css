@@ -151,11 +151,14 @@ html {
   background-color: var(--baby-powder);
   text-align: center;
   padding: 10px;
+  position: relative;
+  padding-bottom: 80px;
 }
 
-.box-card p {
+.box-card ul {
   padding: 20px;
   text-align: center;
+  height: 400px;
 }
 
 .box-cards img {
@@ -174,8 +177,12 @@ h1 {
   border: 2px solid var(--davys-grey);
   border-radius: 5px;
   padding: 5px;
-  width: 60px;
   font-size: 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: 30px;
 }
 
 .box-card button:hover {
@@ -189,4 +196,16 @@ h1 {
 ul {
   padding: 25px;
   text-align: left;
+}
+
+@media screen and (max-width: 1150px) {
+  .box-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .box-cards {
+    grid-template-columns: 1fr;
+  }
 }
