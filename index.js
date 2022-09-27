@@ -11,7 +11,7 @@ function openDialog(dialogType, gameName) {
       link = "https://nimisha56.github.io/SnakeGame/";
       break;
     case "bouncy ball":
-      link = "https://nimisha56.github.io/BouncyBallProject/";
+      link = "https://nimisha56.github.io/BouncyBallProject/ ";
       break;
     case "omnifood":
       link = "https://nimisha56.github.io/Omnifood/";
